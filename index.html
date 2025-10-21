@@ -1,120 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pierre Juan (PJ) van Staden – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>PJ van Staden – Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:,">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<header>
-  <div class="container">
-    <h1>Pierre Juan <span class="highlight">(PJ)</span> van Staden</h1>
-    <p class="tagline">IT Business Analyst & Project Manager | Power Platform & Dynamics 365 Specialist</p>
-    <div class="contact">
-      <a href="tel:+27780197970"><i class="fa-solid fa-phone"></i> 078 019 7970</a>
-      <a href="mailto:pjvanstaden.info@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-      <a href="https://linkedin.com/in/pierre-juan-pj-van-staden" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">PJ van Staden</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
     </div>
-  </div>
-</header>
+  </header>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am the bridge between business and technology—an eager, proactive IT Business Analyst & Project Manager
-      with a passion for data-driven strategic planning, process improvement, and delivering tailor-made
-      Microsoft Power Platform & Dynamics 365 solutions that fuel growth.
-    </p>
-  </div>
-</section>
-
-<section id="skills" class="section alt">
-  <div class="container">
-    <h2>Key Competencies</h2>
-    <ul class="skills-grid">
-      <li>Business Analytics</li>
-      <li>Process Improvement</li>
-      <li>Data-Driven Strategic Planning</li>
-      <li>Solution Architecture</li>
-      <li>Project Management</li>
-      <li>Agile & Scrum</li>
-      <li>Microsoft Dynamics 365</li>
-      <li>Power Platform (Power Apps, Power Automate, Power BI)</li>
-      <li>Critical Thinking</li>
-      <li>Excellent Communication</li>
-      <li>Jira & Confluence</li>
-      <li>API Integration</li>
-    </ul>
-  </div>
-</section>
-
-<section id="experience" class="section">
-  <div class="container">
-    <h2>Professional Experience</h2>
-
-    <div class="job">
-      <div class="job-header">
-        <h3>IT Business Analyst / Project Manager</h3>
-        <span class="company">Paycorp / ATM Solutions</span>
-        <span class="date">2023 – Current</span>
+  <main>
+    <section class="hero container">
+      <h1>Pierre Juan <span style="color:var(--primary-light)">(PJ)</span> van Staden</h1>
+      <p class="tagline">IT Business Analyst & Project Manager | Power Platform & Dynamics 365 Specialist</p>
+      <div class="contact-icons">
+        <a href="tel:+27780197970"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:pjvanstaden.info@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/pierre-juan-pj-van-staden" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <ul>
-        <li>Drive process improvement initiatives and deliver projects on time & within scope.</li>
-        <li>Model business processes, develop use cases & user stories aligned to objectives.</li>
-        <li>Coordinate acceptance testing to validate solutions against user needs.</li>
-        <li>Create project plans, schedules, allocate resources and build dashboards for transparent tracking.</li>
-        <li>Leverage Agile methodologies using Jira & Confluence for seamless collaboration.</li>
-      </ul>
-    </div>
+    </section>
 
-    <div class="job">
-      <div class="job-header">
-        <h3>Microsoft Dynamics 365 Developer</h3>
-        <span class="company">Paycorp / ATM Solutions</span>
-        <span class="date">2022 – 2023</span>
+    <section class="section alt">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am the bridge between business and technology—an eager, proactive IT Business Analyst & Project Manager
+          with a passion for data-driven strategic planning, process improvement, and delivering tailor-made
+          Microsoft Power Platform & Dynamics 365 solutions that fuel growth.
+        </p>
       </div>
-      <ul>
-        <li>Designed & deployed custom Dynamics 365 CRM, Customer Engagement & Field Service solutions.</li>
-        <li>Integrated third-party applications via APIs for seamless data flow.</li>
-        <li>Built Power Apps & Power Automate flows to automate processes and boost productivity.</li>
-        <li>Applied Agile practices to deliver high-quality solutions iteratively.</li>
-      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> PJ van Staden. Built with ❤️ and vanilla code.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="education" class="section alt">
-  <div class="container">
-    <h2>Education & Certifications</h2>
-    <ul class="education-list">
-      <li>
-        <strong>Bachelor of Science in Information Technology</strong><br>
-        North-West University <span class="date">2019 – 2022</span>
-      </li>
-      <li>
-        <strong>PL-400: Microsoft Power Platform Developer</strong><br>
-        NetCampus <span class="date">2023</span>
-      </li>
-      <li>
-        <strong>Certificate Program in Business Analysis</strong><br>
-        Faculty Training Institute <span class="date">2024</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <p>© <span id="year"></span> Pierre Juan van Staden. Built with ❤️ and vanilla code.</p>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script src="js/theme.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
